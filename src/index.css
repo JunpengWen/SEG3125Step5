@@ -1,13 +1,110 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans',sans-serif;
+  color: #000;
+  
+}
+.content {
+  background-color: #f3f3f3;
+}
+/* Navbar */
+.navbar{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0  ;
+  background-color: #03191E;
+  top: 0;
+  position: sticky;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar .links{
+  margin-left: auto;
+  margin-right: 80px;
+}
+.navbar img{
+  margin-left: 80px;
+}
+.navbar h1{
+  color: #BC243B;
+  font-size: 2.5em
+}
+.navbar a{
+  margin-left: 80px;
+  text-decoration: none;
+  padding: 5px;
+  color: #BC243B;
+  font-size: 1.5em;
+}
+.navbar a:hover{
+  color: #F18F01;
+}
+
+/* Home */
+.titleImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.subImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+}
+
+/* Contact */
+
+.contact{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact label {
+  text-align: left;
+  display: block;
+}
+
+.contact input, .contact textarea, .contact select {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.contact button {
+  background: #F18F01;
+  color: #fff;
+  border: 0;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Games */
+
+.games{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.games label {
+  text-align: left;
+  display: block;
+}
+
+.games input {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
 }
