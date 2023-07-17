@@ -8,13 +8,15 @@ function Home() {
     width: '66.66%',
     height: '50px',
     marginTop: '50px',
-    marginBottom: '50px',
+    marginBottom: '10px',
     fontSize: '18px',
     border: '1px solid #000',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     textDecoration: 'none',
+    backgroundColor: '#F18F01',
+    color: '#ffffff'
   };
   return (
     
@@ -26,7 +28,9 @@ function Home() {
       </div>
 
       <section id="update">
-        <h1 style={{ display: 'flex', justifyContent: 'center', margin: '50px' }}>Update</h1>
+        <br></br>
+        <br></br>
+        <h1 style={{ display: 'flex', justifyContent: 'center', margin: '50px',fontSize: '2.5em' }}>Update</h1>
         <div className='titleImage'>
           <img src={IMG} alt="img" />
         </div>
@@ -41,7 +45,9 @@ function Home() {
 
 
       <section id="release">
-        <h1 style={{ display: 'flex', justifyContent: 'center', margin: '50px' }}>Release</h1>
+        <br></br>
+        <br></br>
+        <h1 style={{ display: 'flex', justifyContent: 'center', margin: '50px',fontSize: '2.5em'  }}>Release</h1>
         <div className='titleImage'>
           <img src={IMG} alt="img" />
         </div>
@@ -54,7 +60,9 @@ function Home() {
       </section>
 
       <section id="review">
-        <h1 style={{ display: 'flex', justifyContent: 'center', margin: '50px' }}>Review</h1>
+        <br></br>
+        <br></br>
+        <h1 style={{ display: 'flex', justifyContent: 'center', margin: '50px',fontSize: '2.5em' }}>Review</h1>
         <div className='titleImage'>
           <img src={IMG} alt="img" />
         </div>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import logo from './logo.png';
 const Navbar = () => {
     return ( 
@@ -5,9 +7,9 @@ const Navbar = () => {
             <img src={logo} width={70} height={70}  alt="Logo" />
             <h1 style={{marginLeft: 10}}>GameWame</h1>
             <div className="links">
-                <a href="/">Home</a>
-                <a href="/games">Games</a>
-                <a href="/contact">Contact Us</a>
+                <Link to="/">Home</Link>
+                <Link to="/games">Games</Link>
+                <Link to="/contact">Contact Us</Link>
             </div>
         </nav>
         

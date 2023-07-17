@@ -9,6 +9,11 @@
 .content {
   background-color: #f3f3f3;
 }
+.section{
+  padding: 0;
+  margin: 0;
+}
+
 /* Navbar */
 .navbar{
   padding: 10px;
@@ -108,3 +113,4 @@
   box-sizing: border-box;
   display: block;
 }
+
