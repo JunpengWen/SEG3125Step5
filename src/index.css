@@ -66,12 +66,19 @@
 
 }
 
+.homecontent hr{
+  border-width: 2px;
+  margin: 25px;
+  
+  
+}
+
 /* Contact */
 
-.contact{
+.contact :not(.footer) {
   max-width: 400px;
   margin: 0 auto;
-  text-align: center;
+
 }
 
 .contact label {
@@ -94,6 +101,7 @@
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
 }
 
 /* Games */
@@ -116,4 +124,37 @@
   box-sizing: border-box;
   display: block;
 }
+/* Footer */
+.footer{
+  padding: 10px;
+  align-items: center;
+  margin: 0  ;
+  background-color: #03191E; 
+}
 
+.footer p{
+  padding: 5px;
+  color: #f3f3f3;
+  text-size-adjust: 5px;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 160px;
+  margin-right: 160px;
+
+}
+
+.footer a{
+  margin-left: auto;
+  margin-right: 80px;
+  margin-left: 80px;
+  text-decoration: none;
+  padding: 5px;
+  color: #BC243B;
+  
+}
+
+.footer h4 {
+  color: #BC243B;
+}

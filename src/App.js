@@ -1,4 +1,5 @@
 import Contact from './Contact';
+import Footer from './Footer';
 import Games from './Games';
 import Home from './Home';
 import Navbar from './Navbar';

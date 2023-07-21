@@ -8,6 +8,7 @@ import release3 from './release3.png'
 import review1 from './review1.png'
 import review2 from './review2.png'
 import review3 from './review3.png'
+import Footer from './Footer';
 
 
 
@@ -39,7 +40,8 @@ function Home() {
       <section id="update">
         <br></br>
         <br></br>
-        <h1 style={{ display: 'flex', justifyContent: 'center', margin: '50px', fontSize: '2.5em' }}>Update</h1>
+        <h1 style={{ display: 'flex', justifyContent: 'center', marginTop: '50px', fontSize: '2.5em' }}>Update</h1>
+        <hr></hr>
         <div className='titleImage'>
           <img src={update1} alt="img" />
         </div>
@@ -49,6 +51,7 @@ function Home() {
           Anno 1800 and Metro: Exodus also had impressive PC launches. The store's roadmap shifted due to development priorities,
           and the partnership with Humble Bundle is thriving. The free game initiative has resulted in over 25 million installations.
           Epic Games expresses gratitude for the support received.</p>
+        <br></br>
         <div className='subImage'>
           <img src={update2} style={{ marginRight: '150px' }} alt="img" />
           <p>The April Update for Generation Zero brings significant improvements and bug fixes to enhance the gameplay experience.
@@ -58,6 +61,7 @@ function Home() {
             for further improvements.</p>
 
         </div>
+        <br></br>
         <div className='subImage'>
           <p>Krafton Inc. and Tencent Games have released the 2.6 update for PUBG Mobile, introducing a dinosaur-themed experience.
             Primal Zones appear on the Erangel map, featuring hostile Pterosaurs and Velociraptors that can be tamed and ridden.
@@ -71,9 +75,10 @@ function Home() {
 
 
       <section id="release">
+        <br style={{ marginTop: '50px' }}></br>
         <br></br>
-        <br></br>
-        <h1 style={{ display: 'flex', justifyContent: 'center', margin: '50px', fontSize: '2.5em' }}>Release</h1>
+        <h1 style={{ display: 'flex', justifyContent: 'center', marginTop: '50px', fontSize: '2.5em' }}>Release</h1>
+        <hr />
         <div className='titleImage'>
           <img src={release1} alt="img" />
         </div>
@@ -81,6 +86,7 @@ function Home() {
         <p style={{ display: 'flex', justifyContent: 'center', marginLeft: '160px', marginRight: '160px' }}>The ONer give a comprehensive list of game
           release dates for 2023, including titles for PC, PS5, Xbox, and Nintendo Switch. It mentions notable games like The Legend of
           Zelda: Tears of the Kingdom and provides updates on release dates and any associated previews or videos.</p>
+        <br></br>
         <div className='subImage'>
           <img src={release2} style={{ marginRight: '150px' }} alt="img" />
           <p>The April Update for Generation Zero brings significant improvements and bug fixes to enhance the gameplay experience.
@@ -90,6 +96,7 @@ function Home() {
             for further improvements.</p>
 
         </div>
+        <br></br>
         <div className='subImage'>
           <p>Krafton Inc. and Tencent Games have released the 2.6 update for PUBG Mobile, introducing a dinosaur-themed experience.
             Primal Zones appear on the Erangel map, featuring hostile Pterosaurs and Velociraptors that can be tamed and ridden.
@@ -100,9 +107,10 @@ function Home() {
       </section>
 
       <section id="review">
+        <br style={{ marginTop: '50px' }}></br>
         <br></br>
-        <br></br>
-        <h1 style={{ display: 'flex', justifyContent: 'center', margin: '50px', fontSize: '2.5em' }}>Review</h1>
+        <h1 style={{ display: 'flex', justifyContent: 'center', marginTop: '50px', fontSize: '2.5em' }}>Review</h1>
+        <hr />
         <div className='titleImage'>
           <img src={review1} alt="img" />
         </div>
@@ -114,6 +122,7 @@ function Home() {
           surprising newcomers like Disco Elysium, and the absence of popular franchises like Assassin's Creed. The winner not only received
           the most votes but also ranked as many people's number one choice. The full list represents various stories and features games
           from different genres, studios, and eras.</p>
+        <br></br>
         <div className='subImage'>
           <img src={review2} style={{ marginRight: '150px' }} alt="img" />
           <p>During the gamescom 2021 Xbox Stream, Humble Games revealed that a selection of indie games will be available on Xbox Game
@@ -124,6 +133,7 @@ function Home() {
             Gamescom.</p>
 
         </div>
+        <br></br>
         <div className='subImage'>
           <p>
             The best PS4 games include The Last of Us Part II, God of War, Red Dead Redemption 2, Persona 5, Bloodborne, Horizon Zero Dawn,
@@ -132,7 +142,7 @@ function Home() {
           <img src={review3} style={{ marginLeft: '150px' }} alt="img" />
         </div>
       </section>
-
+      <Footer/>
 
     </div>
   );

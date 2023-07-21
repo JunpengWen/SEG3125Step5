@@ -1,5 +1,6 @@
+import Footer from './Footer';
 const Contact = () => {
-    return ( 
+    return (
         <div className="contact">
             <h1 style={{ display: 'flex', justifyContent: 'center', marginBottom: '50px' }}>Contact</h1>
             <form>
@@ -11,8 +12,12 @@ const Contact = () => {
                 <textarea name="" id="" cols="20" rows="5"></textarea>
                 <button>Send</button>
             </form>
+            <Footer />
+
+
         </div>
-     );
+
+    );
 }
- 
+
 export default Contact;

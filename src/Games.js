@@ -1,5 +1,6 @@
 import { useState } from "react";
 import IMG from './IMG.png';
+import Footer from './Footer';
 
 const Games = () => {
 
@@ -25,8 +26,10 @@ const Games = () => {
           <img src={IMG} alt="img" />
         </div>
         <h3 style={{ display: 'flex', justifyContent: 'center', margin: '20px' }}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3> 
+          <Footer/>
         </div>
+       
     );
 
 
