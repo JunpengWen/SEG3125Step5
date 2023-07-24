@@ -108,7 +108,7 @@ hr {
   resize: none;
 }
 
-.mainContact button {
+.contact button {
   background: #F18F01;
   color: #fff;
   border: 0;
@@ -226,7 +226,7 @@ hr {
 
 .collapsible .content {
   padding: 6px;
-  background-color: #eeeeee;
+  background-color: #cecbcb;
 }
 
 .collapsible .header {

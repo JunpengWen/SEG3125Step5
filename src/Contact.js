@@ -1,10 +1,9 @@
 import Footer from './Footer';
 import { useCollapse } from 'react-collapsed';
 import React, { useState } from "react";
-import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
-  const { t, i18n } = useTranslation('contactPage');
+
   // State and handler for each collapsible section
   const [isExpanded1, setExpanded1] = useState(false);
   const [isExpanded2, setExpanded2] = useState(false);
@@ -23,86 +22,73 @@ const Contact = () => {
   function handleOnClick3() {
     setExpanded3(!isExpanded3);
   }
-
   const { getCollapseProps: getCollapseProps1, getToggleProps: getToggleProps1 } = useCollapse({ isExpanded: isExpanded1 });
   const { getCollapseProps: getCollapseProps2, getToggleProps: getToggleProps2 } = useCollapse({ isExpanded: isExpanded2 });
   const { getCollapseProps: getCollapseProps3, getToggleProps: getToggleProps3 } = useCollapse({ isExpanded: isExpanded3 });
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = () => {
     window.alert('Message sent successfully!');
   };
-
-  const handleLanguageToggle = () => {
-    // Get the current language
-    const currentLanguage = i18n.language;
-
-    // Toggle the language between 'en' (English) and 'fr' (French)
-    const newLanguage = currentLanguage === 'en' ? 'fr' : 'en';
-
-    // Change the language using i18n
-    i18n.changeLanguage(newLanguage);
-  };
-
   return (
     <div className="contact">
       <div className="mainContact">
         <br />
-        <button onClick={handleLanguageToggle}>
-          {i18n.language === 'en' ? 'Français' : 'English'}
-        </button>
-        <h1 style={{ display: 'flex', justifyContent: 'center', marginBottom: '50px', fontSize: '2.5em' }}>
-          {t('pageTitle')}
-        </h1>
+        <h1 style={{ display: 'flex', justifyContent: 'center', marginBottom: '50px', fontSize: '2.5em' }}>Contact</h1>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">{t('form.nameLabel')}</label>
-          <input type="text" id="name" required />
-          <label htmlFor="email">{t('form.emailLabel')}</label>
-          <input type="email" id="email" required />
-          <label htmlFor="question">{t('form.questionLabel')}</label>
-          <textarea id="question" cols="20" rows="5"></textarea>
-          <button type="submit">{t('form.sendButton')}</button>
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" required aria-label="Name" />
+
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" required aria-label="Email" />
+
+          <label htmlFor="question">Question:</label>
+          <textarea id="question" cols="20" rows="5" aria-label="Question"></textarea>
+
+          <button type="submit">Send</button>
         </form>
         <br />
       </div>
-      <h1 style={{ justifyContent: 'center', display: 'flex' }}>{t('faq.sectionTitle')}</h1>
-      <div className="fqa">
+      <h1 style={{ justifyContent: 'center', display: 'flex' }}>Frequently Asked Questions</h1>
+      <div className='fqa'>
         <div className="collapsible">
-          <button
-            className="header"
-            {...getToggleProps1({ onClick: handleOnClick1, 'aria-expanded': isExpanded1 })}
-          >
-            {t('faq.question1')}
+        <button {...getToggleProps1({ onClick: handleOnClick1, role: 'button', 'aria-expanded': isExpanded1 })}>
+            Q: How can I contact customer support for assistance?
           </button>
-          <div {...getCollapseProps1()}>
+          <div {...getCollapseProps1()} aria-hidden={!isExpanded1}>
             <div className="content">
-              <p>{t('faq.answer1')}</p>
+              <p>
+                A: If you have any questions, concerns, or need assistance, you can reach our friendly
+                support team via email at contact@gamewave.com or by calling our helpline at +1 (555) 123-4567 during our business hours.
+              </p>
             </div>
           </div>
         </div>
         <div className="collapsible">
-          <button
-            className="header"
-            {...getToggleProps2({ onClick: handleOnClick2, 'aria-expanded': isExpanded2 })}
-          >
-            {t('faq.question2')}
+          <button {...getToggleProps2({ onClick: handleOnClick2, role: 'button', 'aria-expanded': isExpanded2 })}>
+            Q: How can I purchase games on GameWave?
           </button>
-          <div {...getCollapseProps2()}>
+          <div {...getCollapseProps2()} aria-hidden={!isExpanded2}>
             <div className="content">
-              <p>{t('faq.answer2')}</p>
+              <p>
+                A: To purchase games, navigate to the "Game" section, browse the available titles, and select the game you want.
+                Click on the "Buy Now" button, and you'll be guided through
+                the secure checkout process to complete your purchase.
+              </p>
             </div>
           </div>
         </div>
+
         <div className="collapsible">
-          <button
-            className="header"
-            {...getToggleProps3({ onClick: handleOnClick3, 'aria-expanded': isExpanded3 })}
-          >
-            {t('faq.question3')}
+          <button {...getToggleProps3({ onClick: handleOnClick3, role: 'button', 'aria-expanded': isExpanded3 })}>
+            Q: Can I refund a game if I change my mind after purchase?
           </button>
-          <div {...getCollapseProps3()}>
+          <div {...getCollapseProps3()} aria-hidden={!isExpanded3}>
             <div className="content">
-              <p>{t('faq.answer3')}</p>
+              <p>
+                A: Game refunds are subject to the individual game developers' refund policies. Generally,
+                if you encounter any issues with your purchase, please contact our support team, and we'll do our
+                best to assist you.
+              </p>
             </div>
           </div>
         </div>
