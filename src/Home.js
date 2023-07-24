@@ -11,7 +11,6 @@ import review3 from './review3.png'
 import Footer from './Footer';
 
 
-
 function Home() {
   const buttonStyle = {
     flex: '2',
@@ -29,7 +28,6 @@ function Home() {
     color: '#ffffff'
   };
   return (
-
     <div className='homecontent'>
       <div style={{ display: 'flex', justifyContent: 'center', marginLeft: '80px', marginRight: '80px' }}>
         <Button href="#update" style={buttonStyle}>Update</Button >

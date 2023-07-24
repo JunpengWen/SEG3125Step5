@@ -1,0 +1,21 @@
+{
+    "contactPage": {
+      "pageTitle": "Contact",
+      "form": {
+        "nameLabel": "Name",
+        "emailLabel": "Email",
+        "questionLabel": "Question",
+        "sendButton": "Send"
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "question1": "Q: How can I contact customer support for assistance?",
+        "answer1": "A: If you have any questions, concerns, or need assistance, you can reach our friendly support team via email at contact@gamewave.com or by calling our helpline at +1 (555) 123-4567 during our business hours.",
+        "question2": "Q: How can I purchase games on GameWave?",
+        "answer2": "A: To purchase games, navigate to the 'Game' section, browse the available titles, and select the game you want. Click on the 'Buy Now' button, and you'll be guided through the secure checkout process to complete your purchase.",
+        "question3": "Q: Can I refund a game if I change my mind after purchase?",
+        "answer3": "A: Game refunds are subject to the individual game developers' refund policies. Generally, if you encounter any issues with your purchase, please contact our support team, and we'll do our best to assist you."
+      }
+    }
+  }
+  

@@ -3,12 +3,12 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="links">
-                <Link to="/">Home</Link>
-                <Link to="/games">Games</Link>
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/" >Home</Link>
+                <Link to="/games"style={{marginLeft: '80px'}}>Games</Link>
+                <Link to="/contact" style={{marginLeft: '80px'}}>Contact Us</Link>
             </div>
             <br />
-            <h4>Email: contact@gamewave.com                 Phone: +1 (555) 123-4567</h4>
+            <h4>Email: contact@gamewave.com &emsp; Phone: +1 (555) 123-4567</h4>
 
             <p>© 2023 GameWave. All rights reserved.
                 This statement indicates that GameWave holds the copyright for all content and materials on the website

@@ -1,0 +1,21 @@
+{
+    "contactPage": {
+      "pageTitle": "Contactez-nous",
+      "form": {
+        "nameLabel": "Nom",
+        "emailLabel": "Email",
+        "questionLabel": "Question",
+        "sendButton": "Envoyer"
+      },
+      "faq": {
+        "sectionTitle": "Questions Fréquemment Posées",
+        "question1": "Q: Comment puis-je contacter le service client pour obtenir de l'aide ?",
+        "answer1": "R: Si vous avez des questions, des préoccupations ou besoin d'aide, vous pouvez contacter notre équipe de support amicale par e-mail à contact@gamewave.com ou en appelant notre hotline au +1 (555) 123-4567 pendant nos heures de travail.",
+        "question2": "Q: Comment puis-je acheter des jeux sur GameWave ?",
+        "answer2": "R: Pour acheter des jeux, rendez-vous dans la section 'Jeux', parcourez les titres disponibles et sélectionnez le jeu que vous souhaitez. Cliquez sur le bouton 'Acheter maintenant' et vous serez guidé tout au long du processus de paiement sécurisé pour finaliser votre achat.",
+        "question3": "Q: Puis-je obtenir un remboursement si je change d'avis après l'achat d'un jeu ?",
+        "answer3": "R: Les remboursements de jeux sont soumis aux politiques de remboursement des développeurs de jeux individuels. En général, si vous rencontrez des problèmes avec votre achat, veuillez contacter notre équipe de support, et nous ferons de notre mieux pour vous aider."
+      }
+    }
+  }
+  
